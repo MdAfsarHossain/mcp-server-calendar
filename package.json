@@ -19,6 +19,9 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.29.0"
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "dotenv": "^17.4.2",
+    "googleapis": "^173.0.0",
+    "zod": "^4.4.3"
   }
 }
