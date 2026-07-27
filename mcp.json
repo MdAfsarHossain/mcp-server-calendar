@@ -1,0 +1,14 @@
+{
+    "mcpServers": {
+      "myCalendarData": {
+        "command": "node",
+        "args": [
+          "/Users/techneth/Downloads/Code/mcp-server-calendar/server.js"
+        ],
+        "env": {
+          "GOOGLE_PUBLIC_API_KEY": "YOUR_GOOGLE_PUBLIC_API_KEY",
+          "CALENDAR_ID": "YOUR_CALENDAR_ID"
+        }
+      }
+    }
+  }

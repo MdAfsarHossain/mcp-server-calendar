@@ -90,7 +90,7 @@ Add this configuration to your MCP client setup (e.g., `claude_desktop_config.js
 ```json
 {
   "mcpServers": {
-    "afsar-calendar": {
+    "myCalendarData": {
       "command": "node",
       "args": [
         "/absolute/path/to/mcp-server-calendar/server.js"
