@@ -58,10 +58,6 @@ async function getMyCalendarDataByDate(date) {
             error: error.message
         }
     }
-
-
-
-
 }
 
 // Register the tool to MCP
