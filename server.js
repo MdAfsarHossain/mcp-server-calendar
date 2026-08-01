@@ -61,24 +61,24 @@ async function getMyCalendarDataByDate(date) {
 }
 
 // Register the tool to MCP
-// server.tool(
-//     "getMyCalendarDataByDate",
-//     {
-//         date: z.string().refine((val) => !isNaN(Date.parse(val)), {
-//             message: "Invalid date format. Please provide a valid date string.",
-//         })
-//     },
-//     async ({ date }) => {
-//         return {
-//             content: [
-//                 {
-//                     type: "text",
-//                     text: JSON.stringify(await getMyCalendarDataByDate(date))
-//                 }
-//             ]
-//         }
-//     }
-// )
+server.tool(
+    "getMyCalendarDataByDate",
+    {
+        date: z.string().refine((val) => !isNaN(Date.parse(val)), {
+            message: "Invalid date format. Please provide a valid date string.",
+        })
+    },
+    async ({ date }) => {
+        return {
+            content: [
+                {
+                    type: "text",
+                    text: JSON.stringify(await getMyCalendarDataByDate(date))
+                }
+            ]
+        }
+    }
+)
 
 // Set transfort
 async function init() {
