@@ -80,7 +80,7 @@ server.tool(
     }
 )
 
-// Set transfort
+// Set transport
 async function init() {
     const transport = new StdioServerTransport();
     await server.connect(transport);
